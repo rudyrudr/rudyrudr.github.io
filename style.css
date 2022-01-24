@@ -1,0 +1,177 @@
+
+/* content section*/
+
+/* mobile view */
+
+* {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+.content-section {
+    background-color: black;
+    text-align: center;
+    padding: 50px 5%;
+    border-top: 7px solid rgb(47, 45, 45);
+}
+.title {
+    font-size: 28px;
+    color: blanchedalmond;
+}
+.subtitle {
+    font-size: 18px;
+    color: blanchedalmond;
+    margin: 14px 0px;
+}
+.content-image {
+    width: 80%;
+}
+
+/* tab view */
+@media only screen and (min-width: 450px) {
+    .title {
+        font-size: 48px;
+    }
+    .subtitle {
+        font-size: 28px;
+    }
+}
+
+/* desktop view */
+
+@media only screen and (min-width: 750px) {
+    .content-section {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+    }
+    .content-image {
+        width: 50%;
+    }
+}
+
+/* footer section*/
+
+/* mobile view*/
+
+footer {
+    background-color: black;
+    border-top: 8px solid rgb(47, 45, 45);
+    padding: 50px 5%;
+}
+
+.footer-text {
+    font-size: 16px;
+    font-weight:1200;
+    color: rgb(43, 40, 40);
+    margin-bottom: 30px;
+}
+
+.footer-options {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+
+.footer-link {
+    font-size: 13px;
+    font-weight: 1200;
+    color: rgb(54, 48, 48);
+    margin-bottom:20px;
+    width: 50%;
+}
+
+/* tab view*/
+.footer-link {
+    width: 33%;
+}
+
+/* desktop view*/
+.footer-link {
+    width: 25%;
+}
+
+/* header section*/
+
+/* mobile view */
+
+header {
+    background-image: url(images/bg.png);
+    background-size: cover;
+    background-position:center;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px 5%;
+}
+
+.logo {
+    width: 100px;
+}
+
+.sign-in {
+    background-color: red;
+    font-size: 15px;
+    padding: 6px 10px;
+    border: 0px;
+    border-radius: 3px;
+}
+
+.header-details {
+    padding: 43px 5%;
+    text-align:center;
+}
+
+.email-id {
+    width: 85%;
+    height: 45px;
+    margin-bottom: 10px;
+    padding-left: 12px;
+}
+
+.login-button {
+    height: 40px;
+    padding: 10px;
+}
+
+/* tab view */
+@media only screen and (min-width: 450px) {
+
+    .sign-in {
+        font-size: 20px;
+        padding: 8px 20px;
+    }
+
+    .header-details {
+        padding: 120px 45px;
+    }
+}
+
+/* desktop view */
+
+@media only screen and (min-width: 750px) {
+
+    .header-details {
+        padding: 120px 25%;
+    }
+
+    .email-input {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .email-id {
+        width: 60%;
+    }
+
+    .login-button {
+        font-size: 18px;
+        height: 50px;
+        border-radius: 0px;
+    }
+}
+
